@@ -53,6 +53,26 @@ img {
 
 strong { font-weight: var(--fw-bold); } 
 
+/* buttons */
+
+.btn {
+  display: inline-block;
+  padding: .5em 1.5em;
+  background: var(--clr-accent);
+  color: var(--clr-light);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
 /* Typography */
 
 h1,
@@ -167,9 +187,14 @@ nav { display: none; }
   display: block;
   width: 2em;
   height: 1px;
-  margin: 0.25em auto 1em;
+  margin: 0.5em auto 1em;
   background: var(--clr-light);
   opacity: 0.5;
+}
+
+.service {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 @media (min-width: 800px) {
@@ -180,6 +205,6 @@ nav { display: none; }
   }
 
   .service + .service {
-    margin-left: 2em;
+    margin-left: 3em;
   }
 }
