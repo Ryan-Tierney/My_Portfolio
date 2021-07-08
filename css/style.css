@@ -260,3 +260,37 @@ nav { display: none; }
     z-index: 2;
   }
 }
+
+/* My Work */
+
+.my-work {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.section__subtitle--my-work {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1em;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+}
+
+.porfolio__item {
+  background: var(--clr-accent);
+  overflow: hidden;
+}
+
+.portfolio__img {
+  transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
+  opacity 250ms linear
+}
+
+.portfolio__img:hover {
+  transform: scale(1.2);
+  opacity: .75;
+}
